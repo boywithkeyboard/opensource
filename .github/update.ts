@@ -21,13 +21,13 @@ const formatter = new Intl.NumberFormat('en', { notation: 'compact' })
 portfolio += '\n- **@azurystudio**\n'
 
 for (const repository of azurystudioRepositories.sort((a, b) => a.stargazers_count < b.stargazers_count ? 1 : a.stargazers_count > b.stargazers_count ? -1 : 0)) {
-  portfolio += `    - **${formatter.format(repository.stargazers_count)}** ⭐ - [**${repository.full_name}**](${repository.html_url})\n      \`\`\`\n    ${repository.description}\n      \`\`\`  \n\n`
+  portfolio += `    - **${formatter.format(repository.stargazers_count)}** ⭐ - [**${repository.full_name}**](${repository.html_url})\n      \`\`\`\n      ${repository.description}\n      \`\`\`  \n\n`
 }
 
 portfolio += '\n- **@boywithkeyboard**\n'
 
 for (const repository of boywithkeyboardRepositories.sort((a, b) => a.stargazers_count < b.stargazers_count ? 1 : a.stargazers_count > b.stargazers_count ? -1 : 0)) {
-  portfolio += `    - **${formatter.format(repository.stargazers_count)}** ⭐ - [**${repository.full_name}**](${repository.html_url})\n      \`\`\`\n    ${repository.description}\n      \`\`\`  \n\n`
+  portfolio += `    - **${formatter.format(repository.stargazers_count)}** ⭐ - [**${repository.full_name}**](${repository.html_url})\n      \`\`\`\n      ${repository.description}\n      \`\`\`  \n\n`
 }
 
 const sha = (await (await fetch('https://api.github.com/repos/boywithkeyboard/opensource/contents/readme.md')).json()).sha
