@@ -13,7 +13,7 @@
 
 
 - **@boywithkeyboard**
-    - **4** ⭐ - [**boywithkeyboard/fluent-emoji**](https://github.com/boywithkeyboard/fluent-emoji)
+    - **5** ⭐ - [**boywithkeyboard/fluent-emoji**](https://github.com/boywithkeyboard/fluent-emoji)
       ```
       A React library for Microsoft's Fluent Emoji.
       ```  
