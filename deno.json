@@ -1,0 +1,11 @@
+{
+  "fmt": {
+    "options": {
+      "semiColons": false,
+      "singleQuote": true
+    }
+  },
+  "tasks": {
+    "update": "deno run -A .github/update.ts"
+  }
+}

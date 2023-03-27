@@ -1,0 +1,22 @@
+name: 'update'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *' # every 15th minute
+
+jobs:
+  update:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - uses: 'actions/checkout@v3'
+
+      - uses: 'denoland/setup-deno@v1'
+        with:
+          deno-version: 'v1.x'
+      
+      - name: 'update readme'
+        env:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+        run: 'deno task update'
