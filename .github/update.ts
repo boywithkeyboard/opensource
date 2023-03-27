@@ -44,6 +44,6 @@ await fetch('https://api.github.com/repos/boywithkeyboard/opensource/contents/re
       email: 'noreply@github.com'
     },
     message: 'update',
-    content: btoa(portfolio)
+    content: btoa(unescape(encodeURIComponent(portfolio)))
   })
 })
