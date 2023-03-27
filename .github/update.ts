@@ -1,11 +1,11 @@
 import { parse } from 'https://deno.land/std@v0.181.0/yaml/parse.ts'
+import { Octokit } from 'https://esm.sh/@octokit/rest@19.0.7'
 
 const repositoryNames = parse(await Deno.readTextFile('./opensource.yml')) as { full_name: string, description: string, html_url: string, stargazers_count: number }[]
 
 for (const name of repositoryNames) {
   const result = await (await fetch(`https://api.github.com/repos/${name}`)).json()
 
-  console.log(result)
   repositoryNames[repositoryNames.indexOf(name)] = result
 }
 
@@ -32,18 +32,22 @@ for (const repository of boywithkeyboardRepositories.sort((a, b) => a.stargazers
 
 const sha = (await (await fetch('https://api.github.com/repos/boywithkeyboard/opensource/contents/readme.md')).json()).sha
 
-await fetch('https://api.github.com/repos/boywithkeyboard/opensource/contents/readme.md', {
-  method: 'PUT',
-  headers: {
-    authorization: `bearer ${Deno.env.get('token')}`
+const octokit = new Octokit({
+  auth: Deno.env.get('token')
+})
+
+await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+  owner: 'boywithkeyboard',
+  repo: 'opensource',
+  path: 'readme.md',
+  message: 'update',
+  sha,
+  committer: {
+    name: 'Github',
+    email: 'noreply@github.com'
   },
-  body: JSON.stringify({
-    sha,
-    committer: {
-      name: 'Github',
-      email: 'noreply@github.com'
-    },
-    message: 'update',
-    content: btoa(unescape(encodeURIComponent(portfolio)))
-  })
+  content: btoa(unescape(encodeURIComponent(portfolio))),
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
 })
