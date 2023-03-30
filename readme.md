@@ -28,7 +28,7 @@
       A powerful CLI engine for Deno.
       ```  
 
-    - **1** ⭐ - [**boywithkeyboard/twemoji-svg**](https://github.com/boywithkeyboard/twemoji-svg)
+    - **1** ⭐ - [**boywithkeyboard/twemoji_svg**](https://github.com/boywithkeyboard/twemoji_svg)
       ```
       The latest optimized SVG files for Twemoji.
       ```  
