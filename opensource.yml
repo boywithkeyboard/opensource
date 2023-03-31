@@ -1,7 +1,5 @@
 - 'boywithkeyboard/fluent-emoji'
-- 'boywithkeyboard/twemoji-svg'
-- 'boywithkeyboard/realm'
-- 'boywithkeyboard/user_agent'
+- 'boywithkeyboard/twemoji_svg'
 - 'boywithkeyboard/drgn'
 - 'azurystudio/byte'
 - 'azurystudio/bump'
