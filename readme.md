@@ -9,7 +9,7 @@
 
 
 - **@boywithkeyboard**
-    - **7** ⭐ - [**fluent-emoji**](https://github.com/boywithkeyboard/fluent-emoji)
+    - **8** ⭐ - [**fluent-emoji**](https://github.com/boywithkeyboard/fluent-emoji)
       > A React library for Microsoft's Fluent Emoji.  
 
     - **2** ⭐ - [**drgn**](https://github.com/boywithkeyboard/drgn)
