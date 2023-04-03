@@ -2,7 +2,7 @@
 
 - **@azurystudio**
     - **9** ⭐ - [**byte**](https://github.com/azurystudio/byte)
-      > A disk unit conversion library for JavaScript.  
+      > 🧮 A disk unit conversion library for JavaScript.  
 
     - **4** ⭐ - [**bump**](https://github.com/azurystudio/bump)
       > A Github Workflow for upgrading your dependencies in your Deno app.  
