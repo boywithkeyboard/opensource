@@ -1,7 +1,7 @@
 ## opensource
 
 - **@azurystudio**
-    - **9** ⭐ - [**byte**](https://github.com/azurystudio/byte)
+    - **10** ⭐ - [**byte**](https://github.com/azurystudio/byte)
       > 🧮 A disk unit conversion library for JavaScript.  
 
     - **4** ⭐ - [**bump**](https://github.com/azurystudio/bump)
