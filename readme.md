@@ -10,9 +10,9 @@
 
 - **@boywithkeyboard**
     - **9** ⭐ - [**fluent-emoji**](https://github.com/boywithkeyboard/fluent-emoji)
-      > ✨ A React library for Microsoft's Fluent Emoji.  
+      > 🥰 A React library for Microsoft's Fluent Emoji.  
 
-    - **6** ⭐ - [**drgn**](https://github.com/boywithkeyboard/drgn)
+    - **7** ⭐ - [**drgn**](https://github.com/boywithkeyboard/drgn)
       > 🦕 A powerful CLI engine for Deno.  
 
     - **2** ⭐ - [**twemoji_svg**](https://github.com/boywithkeyboard/twemoji_svg)
